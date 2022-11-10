@@ -2,3 +2,5 @@ node_modules
 *_temp.htm
 *.pdf
 yarn-error.log
+fonts
+.DS_Store

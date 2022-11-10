@@ -1,0 +1,58 @@
+@import './assets/quicksand.scss';
+
+:root {
+	--main: #323260;
+	--grey: #e8e8e8;
+	--space: 8px;
+	--left-column-width: 4cm;
+}
+
+$page_width: 21cm;
+$page_height: 29.7cm;
+
+@page {
+  size: $page_width $page_height;
+  -relaxed-page-width: $page_width;
+  -relaxed-page-height: $page_height;
+  margin: 0;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+h1, h2, h3, h4 {
+	font-family: Quicksand;
+}
+aside {
+	background-color: var(--grey);
+	// color: white;
+	padding: var(--space);
+	width: var(--left-column-width);
+}
+main {
+	flex: 1;
+	display: flex;
+	flex-flow: row;
+	section {
+		flex: 1;
+		padding: var(--space) 16px;
+		h2 {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: baseline;
+			color: var(--main);
+			.after {
+				margin-left: var(--space);
+				flex: 1;
+				height: 4px;
+				border-radius: 2px;
+				background: var(--main);
+			}
+		}
+	}
+}
