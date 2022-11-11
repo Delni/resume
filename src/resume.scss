@@ -1,7 +1,5 @@
-@import './assets/quicksand.scss';
-
 :root {
-	--main: #323260;
+	--main: #323e4f;
 	--grey: #e8e8e8;
 	--space: 8px;
 	--left-column-width: 4cm;
@@ -26,8 +24,10 @@ body {
 }
 
 h1, h2, h3, h4 {
-	font-family: Quicksand;
+	font-family: ManometerSans;
+	font-weight: normal;
 }
+
 aside {
 	background-color: var(--grey);
 	// color: white;

@@ -1,6 +1,4 @@
 
-@import '../assets/ostrich.scss';
-
 header {
 	--header-padding: 0.5cm;
 	background-color: var(--main);
@@ -9,23 +7,37 @@ header {
 	flex-flow: row nowrap;
 	align-items: center;
 	padding: var(--header-padding);
-	img {
-		width: calc(var(--left-column-width) - var(--header-padding));
-	}
 	h1 {
 		border: 4px solid var(--grey);
+		border-radius: 8px;
 		width: fit-content;
 		padding: 8px;
 		font-weight: 400;
 	}
 	h2 { 
 		margin: 0;
-		font-family: OstrichSans, Arial, Helvetica, sans-serif;
+		font-family: 'Ostrich Sans';
+		font-size: 2rem;
 	}
-	div {
+	.title {
 		flex: 1;
 		display: flex;
 		flex-flow: column;
 		align-items: center;
+	}
+	.avatar {
+		--size: calc(var(--left-column-width) - var(--header-padding)); 
+		width: var(--size);
+		height: var(--size);
+		background: white;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		img {
+			height: 120%;
+			position: absolute;
+			bottom: -0.65cm;
+			left: 5%
+		}
 	}
 }
