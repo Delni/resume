@@ -1,7 +1,10 @@
 aside {
+	background-color: var(--grey);
+	// color: white;
+	padding: var(--space);
+	width: var(--left-column-width);
 	article {
 		margin-bottom: 0.25cm;
-		font-size: 14px;
 	}
 	
 	i[class^="fa-"] {
