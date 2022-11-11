@@ -1,8 +1,11 @@
+@import 'https://use.fontawesome.com/releases/v6.2.0/css/all.css';
+
 :root {
 	--main: #323e4f;
 	--grey: #e8e8e8;
 	--space: 8px;
-	--left-column-width: 5cm;
+	--left-column-width: 6cm;
+	--text-color: #464646;
 }
 
 $page_width: 21cm;
@@ -15,6 +18,23 @@ $page_height: 29.7cm;
   margin: 0;
 }
 
+* {
+	color: var(--text-color);
+}
+
+p, a, span {
+	font-family: Plastique;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+i[class^="fa-"] {
+	font-size: 1.2em;
+	margin-right: 0.5em;
+}
 
 body {
 	padding: 0;
