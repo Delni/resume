@@ -1,4 +1,5 @@
 @import 'https://use.fontawesome.com/releases/v6.2.0/css/all.css';
+@import './reset.scss';
 
 :root {
 	--main: #323e4f;
@@ -8,52 +9,6 @@
 	--text-color: #464646;
 }
 
-$page_width: 21cm;
-$page_height: 29.7cm;
-
-@page {
-  size: $page_width $page_height;
-  -relaxed-page-width: $page_width;
-  -relaxed-page-height: $page_height;
-  margin: 0;
-}
-
-* {
-	color: var(--text-color);
-}
-
-p, a, span {
-	font-family: Plastique;
-}
-
-a, a:active {
-	text-decoration: none;
-	color: inherit;
-}
-
-i[class^="fa-"] {
-	font-size: 1.2em;
-	margin-right: 0.5em;
-}
-
-body {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-flow: column;
-}
-
-h1, h2, h3, h4 {
-	font-family: ManometerSans;
-	font-weight: normal;
-}
-
-aside {
-	background-color: var(--grey);
-	// color: white;
-	padding: var(--space);
-	width: var(--left-column-width);
-}
 main {
 	flex: 1;
 	display: flex;
@@ -62,9 +17,11 @@ main {
 		flex: 1;
 		padding: var(--space) 16px;
 		h2 {
+			margin: 0;
 			display: flex;
 			flex-flow: row wrap;
 			align-items: baseline;
+			text-transform: uppercase;
 			color: var(--main);
 			.after {
 				margin-left: var(--space);
@@ -74,5 +31,46 @@ main {
 				background: var(--main);
 			}
 		}
+	}
+}
+
+.jobs {
+	display: grid;
+	grid-template-columns: 2.5cm auto;
+	p {
+		font-size: 8pt;
+		color: #8B8B8B;
+		margin: 0;
+		margin-bottom: 4pt;
+	}
+	.title {
+		font-size: 12pt;
+	}
+	.location {
+		font-size: 1.2em;
+		margin-left: .5em;
+		padding-left: .5em;
+		font-family: 'Ostrich Sans';
+		border-left: 1px solid #8B8B8B;
+		color: #8B8B8B;
+	}
+	.date {
+		position: relative;
+		top: 3pt;
+		font-family: 'Ostrich Sans';
+		font-size: 12pt;
+		color: #8B8B8B;
+		span {
+			font: inherit;
+			color: inherit;
+		}
+		i {
+			vertical-align: middle;
+			font-size: 10pt;
+			color: var(--main);
+		}
+	}
+	img {
+		height: 1.25em;
 	}
 }

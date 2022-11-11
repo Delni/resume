@@ -1,0 +1,40 @@
+$page_width: 21cm;
+$page_height: 29.7cm;
+
+@page {
+  size: $page_width $page_height;
+  -relaxed-page-width: $page_width;
+  -relaxed-page-height: $page_height;
+  margin: 0;
+}
+
+* {
+	color: var(--text-color);
+}
+
+p, a, span {
+	font-family: Plastique;
+	font-size: 12px;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+i[class^="fa-"] {
+	font-size: 1.2em;
+	margin-right: 0.5em;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+h1, h2, h3, h4 {
+	font-family: ManometerSans;
+	font-weight: normal;
+}
