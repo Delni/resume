@@ -1,0 +1,15 @@
+mixin job(date, title, location, linkClass="")
+	.date 
+		i.fa-solid.fa-square
+		span=date
+		svg.node-linker(class=linkClass)
+			path(d="M2 2 L2 100")
+	.job
+		span.title=title
+			span.location=location
+		if block
+			block
+		else 
+			p todo
+	style 
+		include:scss job.mixin.scss
