@@ -1,11 +1,13 @@
 #jobs {
 	display: grid;
 	grid-template-columns: 2.5cm auto;
+	.job {
+		margin-bottom: 4pt;
+	}
 	p {
 		font-size: 8pt;
 		color: #8B8B8B;
 		margin: 0;
-		margin-bottom: 4pt;
 		text-align: justify;
 	}
 	.title {
@@ -53,17 +55,10 @@
 			color: var(--main);
 		}
 	}
-	p:last-of-type {
-		display: flex;
-		flex-flow: row;
-		a {
-			flex: 1;
-		}
-		img {
-			height: 1.25em;
-			&:not(:first-of-type) {
-				margin-left: 2.5px;
-			}
-		}
+	a img {
+		height: 8pt;
+	}
+	img {
+		height: 10pt;
 	}
 }
