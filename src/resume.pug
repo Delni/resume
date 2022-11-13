@@ -1,4 +1,4 @@
-include components/job.mixin.pug
+include components/job/job.mixin.pug
 include components/header/resume-header.pug
 main
 	include components/side/resume-side.pug
@@ -12,19 +12,24 @@ main
 			h2
 				| Expériences professionnelles
 				.after
-			.jobs
+			#jobs
 				+job('Mai 2022', 'Software Engineer', 'Remote')
 					p Continuité de la mission précédente.
 				+job('Oct. 2020', 'Mission - Sinch', 'Remote')
 					p Ajout des channels MMS &amp; WhatsApp à une plateforme d'envois massifs de messages marketing personnalisés. Mise en place de SonarQube. Holacracy, pair-programming, TDD.
 					:markdown-it
 						[![Sinch](https://www.sinch.com/themes/custom/themekit/logo.svg)](https://sinch.com)
-						![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=ffffff)
-						![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=ffffff)
+						![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=fff)
+						![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=fff)
+						![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=000)
+						![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=fff)
+						![Gitlab](https://img.shields.io/badge/-Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=fff)
+						![Jest](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=fff)
+						![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=fff)
 				+job('Nov. 2019', 'Mission - 4SH', 'Mérignac (33)')
 				+job('Sept. 2019', 'Développeur Fullstack', 'Bordeaux (33)')
 				+job('Juil. 2018', 'Junior developer', 'Bordeaux (33)')
-				+job('Janv. 2018', 'Junior developer frontend', 'Pessac (33)')
+				+job('Janv. 2018', 'Junior developer frontend', 'Pessac (33)', 'none')
 		article
 			h2
 				| Projets personnels
