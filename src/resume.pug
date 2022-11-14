@@ -12,7 +12,7 @@ main
 			h2
 				| Expériences professionnelles
 				.after
-			#jobs
+			.xp
 				+job('Mai 2022', 'Software Engineer', 'Remote')
 					:markdown-it
 						[![Sinch](https://www.sinch.com/themes/custom/themekit/logo.svg)](https://sinch.com)
@@ -67,14 +67,35 @@ main
 						![AngularJS](https://img.shields.io/badge/-AnuglarJS-E23237?style=flat-square&logo=angularjs&logoColor=fff)
 					p Stage de fin d'étude. Mise en place de fonctionnalités diverses dans l'interface du produit ScanDM.
 						
-		article
-			h2
-				| Projets personnels
-				.after
+		//- article
+		//- 	h2
+		//- 		| Projets personnels
+		//- 		.after
+		//- 	.projects
+		//- 		p
+		//- 			strong Mercury
+		//- 			br
+		//- 			| Budget Planner of 21st century
 		article 
 			h2
 				| Formations
 				.after
+			.xp
+				+job('2018', 'Diplôme d\'Ingénieur - Spécialitié ISIC', 'Douai (59)')
+					:markdown-it
+						**Mines de Douai** - Ingénierie des Systèmes d'Informations et de Communications
+				+job('2017', 'Échanger international', 'Paisley (Écosse)')
+					:markdown-it
+						**UWS** – HTML & Game development
+				+job('2017', 'MOOC UX Fundamentals', 'Aquent')
+					:markdown-it
+						**thegymnasium.com**
+				+job('2015', 'Classes Préparatoires', 'Amiens (80)')
+					:markdown-it
+						**Lycée Louis Thuillier** – PCSI / PSI
+				+job('2012', 'Baccalauréat Scientifique', 'Beauvais (60)', 'none')
+					:markdown-it
+						**Lycée du Saint Esprit**
 
 style
 	include:scss resume.scss
