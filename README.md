@@ -3,6 +3,11 @@
 Based on [ReLaXed](https://github.com/RelaxedJS/ReLaXed).
 
 > :warning: Disclaimer : all the fonts used in this projet should be installed globally on your computer for it to work. Indeed, I used OTF files which are not read by ReLaXed. Moreover, some of these fonts are under commercial licensing, so I cannot share them here. 
+
+## Result
+
+[PDF export](https://github.com/Delni/resume/blob/main/src/resume.pdf)
+
 ## Getting started
 
 This project use yarn, so simply install the deps with
