@@ -16,6 +16,9 @@ main {
 	section {
 		flex: 1;
 		padding: var(--space) 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		h2 {
 			margin: 0;
 			display: flex;
@@ -29,6 +32,23 @@ main {
 				height: 4px;
 				border-radius: 2px;
 				background: var(--main);
+			}
+		}
+		.projects {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			font-family: Plastique;
+			font-size: 8pt;
+			color: #8B8B8B;
+			strong {
+				font-size: 10pt;
+			}
+			p {
+				margin: 0;
+			}
+			img {
+				height: 10pt;
 			}
 		}
 	}
