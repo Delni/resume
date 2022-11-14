@@ -12,9 +12,9 @@ $page_height: 29.7cm;
 	color: var(--text-color);
 }
 
-p, a, span {
+p, a, span, li {
 	font-family: Plastique;
-	font-size: 12px;
+	font-size: 9pt;
 }
 
 a, a:active {
@@ -34,7 +34,25 @@ body {
 	flex-flow: column;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: ManometerSans;
 	font-weight: normal;
+}
+
+h4 {
+	font-family: Plastique;
+	margin-bottom: 0;
+	margin-top: 4pt;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-left: 0;
+	li::before {
+		content: '>';
+		font-family: ManometerSans;
+		padding-right: 0.5em;
+	}
 }
