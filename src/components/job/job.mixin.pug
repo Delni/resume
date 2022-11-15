@@ -1,9 +1,18 @@
-mixin job(date, title, location, src, linkClass="")
+mixin job(date, title, location, src, linkClass="", presta=false)
 	.date 
-		i.fa-solid.fa-square
-		span=date
-		svg.node-linker(class=linkClass)
-			path(d="M2 2 L2 100")
+		if presta
+			svg.node-linker.full(class=linkClass)
+				path(d="M2 2 L2 100")
+			.presta
+				i.fa-solid.fa-square
+				span=date
+				svg.node-linker(class=linkClass)
+					path(d="M2 70 C2,20 22.5,30 22.5,0")
+		else
+			i.fa-solid.fa-square
+			span=date
+			svg.node-linker(class=linkClass)
+				path(d="M2 2 L2 100")
 	.job
 		.title
 			div=title

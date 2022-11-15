@@ -1,6 +1,6 @@
 .xp {
 	display: grid;
-	grid-template-columns: 2cm auto;
+	grid-template-columns: 2.5cm auto;
 	.job {
 		margin-bottom: 4pt;
 	}
@@ -19,6 +19,17 @@
 		.logo {
 			flex: 1;
 			text-align: right;
+		}
+	}
+	.presta {
+		margin-left: 15pt;
+		font-family: 'Ostrich Sans';
+		font-size: 12pt;
+		color: #8B8B8B;
+		.node-linker {
+		// 	left: 15pt !important;
+			height: 100% !important;
+			width: auto !important;
 		}
 	}
 	.location {
@@ -42,11 +53,16 @@
 			left: 3.5px;
 			top: 12pt;
 			width: 3pt;
+			&.full {
+				top: -8pt;
+				height: 100%;
+			}
 			path {
 				stroke: var(--main);
 				stroke-width: 2pt;
 				stroke-dasharray: 5;
 				stroke-linecap: round;
+				fill: none;
 			}
 
 			&.none {
