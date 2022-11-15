@@ -12,13 +12,12 @@ $page_height: 29.7cm;
 	color: var(--text-color);
 }
 
-p, a, span, li, div {
+p, span, li, div {
 	font-family: Plastique;
 	font-size: 9pt;
 }
-
-a, a:active {
-	text-decoration: none;
+a {
+	font: inherit;
 	color: inherit;
 }
 
