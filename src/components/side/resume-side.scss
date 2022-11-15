@@ -10,6 +10,9 @@ aside {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+	.contact a {
+		text-decoration: none;
+	}
 	
 	i[class^="fa-"] {
 		color: var(--main);
@@ -39,6 +42,9 @@ aside {
 			font-size: 20px;
 			margin: 0;
 		}
+	}
+	h4 {
+		margin-bottom: 5pt;
 	}
 	.watermark {
 		position: absolute;
