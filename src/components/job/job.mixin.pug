@@ -1,12 +1,16 @@
-mixin job(date, title, location, linkClass="")
+mixin job(date, title, location, src, linkClass="")
 	.date 
 		i.fa-solid.fa-square
 		span=date
 		svg.node-linker(class=linkClass)
 			path(d="M2 2 L2 100")
 	.job
-		span.title=title
-			span.location=location
+		.title
+			div=title
+				span.location=location
+			if src
+				.logo
+					img(src=src)
 		if block
 			block
 		else 

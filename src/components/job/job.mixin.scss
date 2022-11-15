@@ -11,7 +11,15 @@
 		text-align: justify;
 	}
 	.title {
-		font-size: 12pt;
+		div {
+			font-size: 12pt;
+		}
+		display: flex;
+		align-items: center;
+		.logo {
+			flex: 1;
+			text-align: right;
+		}
 	}
 	.location {
 		font-size: 1.2em;
