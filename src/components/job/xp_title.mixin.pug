@@ -1,4 +1,4 @@
-mixin job(date, title, location, src, linkClass="", presta=false)
+mixin xp_title(date, title, location, src, linkClass="", presta=false)
 	.date 
 		if presta
 			svg.node-linker.full(class=linkClass)
@@ -25,4 +25,4 @@ mixin job(date, title, location, src, linkClass="", presta=false)
 		else 
 			p todo
 	style 
-		include:scss job.mixin.scss
+		include:scss xp_title.mixin.scss
