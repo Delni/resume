@@ -1,87 +1,9 @@
 include title.mixin.pug
 aside
-	article.contact
-		+title("Contact")
-		.info 
-			i.fa-fw.fa-solid.fa-map-pin
-			span Marmanhac (15250)
-		.info 
-			i.fa-fw.fa-solid.fa-mobile-screen
-			a(href="tel:+33670530907") 06.70.53.09.07
-		.info 
-			i.fa-fw.fa-solid.fa-envelope
-			a(href="mailto:nicolas.delauney@pm.me") nicolas.delauney@pm.me
-		//- .info 
-			i.fa-fw.fa-brands.fa-linkedin
-			a(href="https://www.linkedin.com/in/nicolas-delauney-gautier") linkedin.com/in/nicolas-delauney-gautier
-		.info 
-			i.fa-fw.fa-brands.fa-github
-			a(href="https://github.com/delni/") github.com/delni
-		.info 
-			i.fa-fw.fa-solid.fa-globe
-			a(href="https://blog.delni.me/fr/") blog.delni.me
-	article.skills 
-		+title("Compétences")
-		h4 Langages
-		:markdown-it
-			- Kotlin
-			- Javascript
-			- Java
-			- Dart
-			- Go
-			- Python
-		h4 Superset
-		:markdown-it
-			- Typescript
-			- Sass / Less
-		h4 Frontend
-		:markdown-it
-			- Vue
-			- React
-			- Angular
-			- Flutter
-		h4 Backend
-		:markdown-it
-			- Ktor
-			- Springboot
-			- Express
-			- FastAPI
-			- RESTful
-			- GraphQL
-		h4 Persistence
-		:markdown-it
-			- PostgreSQL
-			- MongoDB
-			- MariaDB
-			- SQLite
-		h4 DevOps
-		:markdown-it
-			- Gitlab CI/CD
-			- Github Actions
-			- Jenkins
-			- Docker
-			- Kubernetes
-			- AWS
-		h4 Système
-		:markdown-it
-			- MacOS
-			- GNU/Linux
-			- Windows
-		h4 Parlé &amp; Écrit
-		:markdown-it
-			- Français  
-				(natif)
-			- Anglais  
-			  	(TOEIC 930)
-	article 
-		+title("Loisirs")
-		:markdown-it
-			- 🎞 Cinéma
-			- 📚 Lecture (Science-Fiction)
-			- 👾 Pixel art
-			- ⌨️ Claviers mécaniques
-			- 💃 Lindy Hop (Swing)
-			- 🥾 Randonnées
+	include content/contact.pug
+	include content/skills.pug
+	include content/hobbies.pug
+
 	.watermark
 		:markdown-it
 			Made with [ReLaXed](https://github.com/RelaxedJS/) | See on [Github](https://github.com/Delni/resume)
