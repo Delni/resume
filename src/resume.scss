@@ -7,6 +7,22 @@
 	--space: 8px;
 	--left-column-width: 6cm;
 	--text-color: #464646;
+	--page-width: 21cm;
+	--page-height: 29.7cm;
+}
+
+
+@page {
+	size: --page_width --page_height;
+	-relaxed-page-width: --page_width;
+	-relaxed-page-height: --page_height;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
 }
 
 main {
@@ -38,7 +54,7 @@ main {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;
-			font-family: Plastique;
+			font-family: Plastique, sans-serif;
 			font-size: 8pt;
 			color: #8B8B8B;
 			strong {
