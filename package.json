@@ -4,11 +4,19 @@
   "repository": "git@github.com:Delni/resume.git",
   "author": "Nicolas DELAUNEY <niko-d@live.fr>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@4.6.0",
+  "engineStrict": true,
+  "engines": {
+    "node": "~18"
+  },
   "scripts": {
     "dev": "relaxed src/resume.pug"
   },
   "devDependencies": {
+    "highlight.js": "^11.11.1",
+    "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
+    "jstransformer-markdown-it": "^3.0.0",
     "node-sass": "^8.0.0",
     "relaxedjs": "^0.2.4"
   },
