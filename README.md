@@ -6,7 +6,8 @@ Based on [ReLaXed](https://github.com/RelaxedJS/ReLaXed).
 
 ## Result
 
-[PDF export](https://github.com/Delni/resume/blob/main/src/resume.pdf)
+[PDF export in 🇫🇷](https://github.com/Delni/resume/blob/main/src/fr/resume.pdf)
+[PDF export in 🇬🇧](https://github.com/Delni/resume/blob/main/src/en/resume.pdf)
 
 ## Getting started
 
