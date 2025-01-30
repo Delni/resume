@@ -10,7 +10,11 @@
     "node": "~18"
   },
   "scripts": {
-    "dev": "relaxed src/resume.pug"
+    "dev:fr": "relaxed src/fr/resume.pug --watch src",
+    "dev:en": "relaxed src/en/resume.pug --watch src",
+    "build:fr": "relaxed src/fr --build-once",
+    "build:en": "relaxed src/en --build-once",
+    "prepare": "husky"
   },
   "devDependencies": {
     "highlight.js": "^11.11.1",

@@ -1,13 +1,16 @@
 include title.mixin.pug
-aside
-	include content/contact.pug
-	include content/skills.pug
-	include content/hobbies.pug
 
-	.watermark
-		:markdown-it
-			Made with [ReLaXed](https://github.com/RelaxedJS/) | See on [Github](https://github.com/Delni/resume)
+mixin side()
+	aside
+		if block
+			block
+		else 
+			p todo
+
+		.watermark
+			:markdown-it
+				Made with [ReLaXed](https://github.com/RelaxedJS/) | See on [Github](https://github.com/Delni/resume)
 
 
-style 
-	include:scss resume-side.scss
+	style 
+		include:scss resume-side.scss

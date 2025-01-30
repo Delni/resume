@@ -1,0 +1,35 @@
+include ../components/job/xp_title.mixin.pug
+include ../components/header/resume-header.pug
+include ../components/side/resume-side.pug
+
++header("CDI - Ingénieur Logiciel - Remote")
+main
+	+side
+		include content/contact.pug
+		include content/skills.pug
+		include content/hobbies.pug
+	section
+		article 
+			h2
+				| À propos
+				.after
+			p(style="text-align: justify; margin:0") De nature curieuse et enjouée, j'aime explorer de nouvelles perspectives, apprendre et partager des connaissances avec mon équipe, et réaliser des logiciels de qualité selon la méthode eXtreme Programming (XP). Être développeur signifie pour moi simplifier la vie des gens en proposant une solution concrète à un problème donné.
+		article 
+			h2
+				| Expériences professionnelles
+				.after
+			include content/experiences.pug
+						
+		article 
+			h2
+				| Formations
+				.after
+			include content/education.pug
+		article
+			h2
+				| Projets personnels
+				.after
+			include content/projects.pug
+
+style
+	include:scss ../resume.scss
