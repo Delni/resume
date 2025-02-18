@@ -1,20 +1,22 @@
 article.contact
-	+title("Contact")
-	.info 
-		i.fa-fw.fa-solid.fa-map-pin
-		span Marmanhac (Cantal, France 🇫🇷)
-	.info 
-		i.fa-fw.fa-solid.fa-mobile-screen
-		a(href="tel:+33670530907") +336 705 309 07
-	.info 
-		i.fa-fw.fa-solid.fa-envelope
-		a(href="mailto:nicolas.delauney@pm.me") nicolas.delauney@pm.me
-	//- .info 
-		i.fa-fw.fa-brands.fa-linkedin
-		a(href="https://www.linkedin.com/in/nicolas-delauney-gautier") linkedin.com/in/nicolas-delauney-gautier
-	.info 
-		i.fa-fw.fa-brands.fa-github
-		a(href="https://github.com/delni/") github.com/delni
-	.info 
-		i.fa-fw.fa-solid.fa-globe
-		a(href="https://blog.delni.me/en/") blog.delni.me
+	+title(translations.side.contact)
+	if contact.address
+		.info 
+			i.fa-fw.fa-solid.fa-map-pin
+			span #{contact.address}
+	if contact.phone
+		.info 
+			i.fa-fw.fa-solid.fa-mobile-screen
+			a(href=`tel:${contact.phone}`) #{contact.phone}
+	if contact.email
+		.info 
+			i.fa-fw.fa-solid.fa-envelope
+			a(href=`mailto:${contact.email}`) #{contact.email}
+	if contact.github
+		.info 
+			i.fa-fw.fa-brands.fa-github
+			a(href=`https://${contact.github}/`) #{contact.github}
+	if contact.site
+		.info 
+			i.fa-fw.fa-solid.fa-globe
+			a(href=`https://${contact.site}`) #{contact.site}

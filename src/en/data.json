@@ -1,0 +1,37 @@
+{
+	"name": "Nicolas DELAUNEY-GAUTIER",
+	"title": "Software Engineer | Remote",
+	"contact": {
+		"address": "Marmanhac (Cantal, France 🇫🇷)",
+		"phone": "+33670530907",
+		"email": "nicolas.delauney@pm.me",
+		"github": "github.com/delni",
+		"site": "blog.delni.me/en/"
+	},
+	"skills": [
+		{
+			"title": "Languages",
+			"values": [
+				"Kotlin",
+				"Javascript",
+				"Java",
+				"Dart",
+				"Go",
+				"Python"
+			]
+		}
+	],
+	"translations": {
+		"side": {
+			"contact": "Contact",
+			"skills": "Skills",
+			"hobbies": "Hobbies"
+		},
+		"main": {
+			"about": "About me",
+			"experiences": "Work Experiences",
+			"formation": "Education",
+			"personal": "Personal projects"
+		}
+	}
+}

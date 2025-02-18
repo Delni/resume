@@ -1,5 +1,10 @@
 article.skills 
 	+title("Skills")
+	for skill in skills
+		h4 #{skill.title}
+		for value in skill.values
+			:markdown-it
+				- #{value}
 	h4 Languages
 	:markdown-it
 		- Kotlin

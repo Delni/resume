@@ -1,10 +1,10 @@
-mixin header(jobTitle)
+mixin header()
 	header
 		.avatar
 			img(src="../assets/images/nicolas.jpg")
 		.title
-			h1 Nicolas DELAUNEY-GAUTIER
-			h2= jobTitle
+			h1 #{name}
+			h2 #{title}
 
 	style 
 		include:scss resume-header.scss
